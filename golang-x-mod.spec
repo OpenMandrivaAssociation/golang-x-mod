@@ -110,7 +110,9 @@ done
 
 %check
 %if %{with check}
-# NOTE: sumdb/tlog needs network
-%gochecks -d sumdb/tlog
+# NOTE:
+#   sumdb/tlog needs network
+#   zip needs network
+%gochecks -d sumdb/tlog -d zip
 %endif
 
