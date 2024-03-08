@@ -30,7 +30,32 @@ URL:		https://github.com/golang/mod
 License:	BSD-3-Clause
 Group:		Development/Other
 BuildRequires:	compiler(go-compiler)
+%if ! %{with bootstrap2}
 BuildRequires:	golang-ipath(golang.org/x/tools)
+BuildRequires:	golang(github.com/google/go-cmp/cmp)
+BuildRequires:	golang(github.com/jba/printsrc)
+BuildRequires:	golang(github.com/yuin/goldmark)
+BuildRequires:	golang(github.com/yuin/goldmark/ast)
+BuildRequires:	golang(github.com/yuin/goldmark/parser)
+BuildRequires:	golang(github.com/yuin/goldmark/renderer/html)
+BuildRequires:	golang(github.com/yuin/goldmark/text)
+BuildRequires:	golang(golang.org/x/mod/modfile)
+BuildRequires:	golang(golang.org/x/mod/module)
+BuildRequires:	golang(golang.org/x/mod/semver)
+BuildRequires:	golang(golang.org/x/net/html)
+BuildRequires:	golang(golang.org/x/net/html/atom)
+BuildRequires:	golang(golang.org/x/net/websocket)
+BuildRequires:	golang(golang.org/x/sync/errgroup)
+BuildRequires:	golang(golang.org/x/text/unicode/runenames)
+BuildRequires:	golang(golang.org/x/vuln/scan)
+BuildRequires:	golang(honnef.co/go/tools/analysis/lint)
+BuildRequires:	golang(honnef.co/go/tools/quickfix)
+BuildRequires:	golang(honnef.co/go/tools/simple)
+BuildRequires:	golang(honnef.co/go/tools/staticcheck)
+BuildRequires:	golang(honnef.co/go/tools/stylecheck)
+BuildRequires:	golang(mvdan.cc/gofumpt/format)
+BuildRequires:	golang(mvdan.cc/xurls/v2)
+%endif
 
 %description
 This provides GO packages for writing tools that work
