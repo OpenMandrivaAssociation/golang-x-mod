@@ -19,11 +19,6 @@ Name:		golang-x-mod
 
 Release:	2
 Source0:	https://github.com/golang/mod/archive/v%{version}/mod-%{version}.tar.gz
-%if %{with bootstrap2}
-# Generated from Source100
-Source3:	vendor.tar.zst
-Source100:	golang-package-dependencies.sh
-%endif
 URL:		https://github.com/golang/mod
 License:	BSD-3-Clause
 Group:		Development/Other
