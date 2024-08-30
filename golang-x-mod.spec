@@ -6,7 +6,7 @@
 # https://github.com/golang/mod
 %global goipath		golang.org/x/mod
 %global forgeurl	https://github.com/golang/mod
-Version:		0.16.0
+Version:		0.20.0
 
 %gometa
 
@@ -17,7 +17,7 @@ Version:		0.16.0
 Summary:	Go module mechanics libraries
 Name:		golang-x-mod
 
-Release:	2
+Release:	1
 Source0:	https://github.com/golang/mod/archive/v%{version}/mod-%{version}.tar.gz
 URL:		https://github.com/golang/mod
 License:	BSD-3-Clause
