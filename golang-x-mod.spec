@@ -6,7 +6,7 @@
 # https://github.com/golang/mod
 %global goipath		golang.org/x/mod
 %global forgeurl	https://github.com/golang/mod
-Version:		0.21.0
+Version:		0.22.0
 
 %gometa
 
